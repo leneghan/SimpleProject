@@ -35,6 +35,9 @@
         </jar>
     </target>
 
+    <target name="run" depends="jar">
+        <java jar="${build.jar.dir}/Encrypt.jar" fork="true" />
+    </target>
 
 
 </project>
